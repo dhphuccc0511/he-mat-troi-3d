@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05080d" />
+  <title>Hệ Mặt Trời 3D</title>
+  <link rel="stylesheet" href="./bt.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.180.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="universe" aria-label="Mô hình 3D Hệ Mặt Trời có thể xoay và thu phóng"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <header class="masthead">
+    <p class="eyebrow">Hành trình quanh ngôi sao của chúng ta</p>
+    <h1>Hệ Mặt Trời</h1>
+    <p class="intro">Tám hành tinh chuyển động quanh Mặt Trời. Tìm Trái Đất và người bạn đồng hành Mặt Trăng.</p>
+  </header>
+  <aside class="system-meta" aria-label="Thông tin hệ hành tinh">
+    <span>THÁI DƯƠNG HỆ</span>
+    <strong>01 <i>/</i> 08</strong>
+    <span>MẶT TRỜI · HÀNH TINH · MẶT TRĂNG</span>
+  </aside>
+  <footer class="footer">
+    <div class="hint">
+      <span class="hint-mark" aria-hidden="true">↗</span>
+      <span>Kéo để xoay<br />Cuộn để phóng to, thu nhỏ</span>
+    </div>
+    <div class="actions">
+      <button id="earth-view" type="button">Đến Trái Đất</button>
+      <button id="reset-view" type="button">Toàn hệ Mặt Trời</button>
+    </div>
+  </footer>
+  <script type="module" src="./bt.js"></script>
+</body>
+</html>
